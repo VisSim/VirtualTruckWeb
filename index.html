@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>3D Model Viewer</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+    />
+    <script
+      type="text/javascript"
+      src="https://static.sketchfab.com/api/sketchfab-viewer-1.12.1.js"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>3D Model Viewer</h1>
+      <h2>Truck</h2>
+    </header>
+    <center>
+      <iframe src="" id="api-frame" width="640" height="360"></iframe>
+      <script src="viewer.js"></script>
+    </center>
+    <div class="container">
+      <div class="controls" id="controls">
+        <button class="button" id="play">Disassemble</button>
+        <button class="button" id="reverse">Assemble</button>
+        <button class="button" id="annotation">Annotations</button>
+      </div>
+      
+      <h3><u> Usage Instructions:</u></h3>
+      <p class="line-break"><b>View Controls</b></p>
+      <br>
+      <p>1) Rotate View:&nbsp;&nbsp;&nbsp;&nbsp;<i>Left Click and Drag</i></p>
+      <p>2) Pan View:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Right Click and Drag</i></p>
+      <p>3) Zoom In / Out:&nbsp;<i>Mouse Scroll</i></p>
+      <br>
+      <p><b>Disassemble:</b>&nbsp;&nbsp;Click to disassemble the truck</p>
+      <p><b>Assemble:</b>&nbsp;&nbsp;Click to assemble the truck</p>
+      <p><b>Annotations:</b>&nbsp;&nbsp;Click to toggle annotations ON / OFF</p>
+    </div>   
+  </body>
+</html>
